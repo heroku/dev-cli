@@ -13,7 +13,7 @@ const skipIfWindows = process.platform === 'win32' ? test.skip() : test
 const testRun = `test-${Math.random().toString().split('.')[1].slice(0, 4)}`
 const s3UploadedFiles: string[] = []
 
-describe('publish', () => {
+describe.skip('publish', () => {
   beforeEach(async () => {
     await qq.x(`aws s3 rm --recursive s3://oclif-staging/channels/${testRun}`)
     pjson.version = `${pjson.version}-${testRun}`

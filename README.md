@@ -19,11 +19,11 @@ helpers for oclif CLIs
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g @rasphilco/dev-cli
+$ npm install -g @heroku/dev-cli
 $ oclif-dev COMMAND
 running command...
 $ oclif-dev (-v|--version|version)
-@rasphilco/dev-cli/0.1.0 darwin-x64 node-v18.8.0
+@heroku/dev-cli/0.1.0 darwin-x64 node-v18.8.0
 $ oclif-dev --help [COMMAND]
 USAGE
   $ oclif-dev COMMAND
