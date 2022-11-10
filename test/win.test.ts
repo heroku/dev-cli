@@ -8,7 +8,7 @@ const originalVersion = pjson.version
 const skipIfWindows = process.platform === 'win32' ? test.skip() : test
 const testRun = `test-${Math.random().toString().split('.')[1].slice(0, 4)}`
 
-describe('publish:win', () => {
+describe.skip('publish:win', () => {
   beforeEach(async () => {
     await qq.x(`aws s3 rm --recursive s3://oclif-staging/channels/${testRun}`)
     pjson.version = `${pjson.version}-${testRun}`

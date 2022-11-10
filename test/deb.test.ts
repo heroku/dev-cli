@@ -11,7 +11,7 @@ const target = [process.platform, process.arch].join('-')
 const onlyLinux = process.platform === 'linux' ? test : test.skip()
 const testRun = `test-${Math.random().toString().split('.')[1].slice(0, 4)}`
 
-describe('publish:deb', () => {
+describe.skip('publish:deb', () => {
   beforeEach(async () => {
     await qq.x(`aws s3 rm --recursive s3://oclif-staging/channels/${testRun}`)
     pjson.version = `${pjson.version}-${testRun}`
