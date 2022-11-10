@@ -7,7 +7,7 @@
     "heroku": "bin/run"
   },
   "bugs": {
-    "url": "https://github.com/oclif/dev-cli/issues"
+    "url": "https://github.com/heroku/dev-cli/issues"
   },
   "dependencies": {
     "@oclif/command": "^1.8.15",
