@@ -57,7 +57,7 @@ export async function build(c: IConfig, options: {
     const yarn = await qq.exists([yarnRoot, 'yarn.lock'])
     if (yarn) {
       await qq.cp([yarnRoot, 'yarn.lock'], '.')
-      await qq.x('yarn --no-progress --production --non-interactive')
+      await qq.x('yarn --production --non-interactive')
     } else {
       let lockpath = qq.join(c.root, 'package-lock.json')
       if (!await qq.exists(lockpath)) {
