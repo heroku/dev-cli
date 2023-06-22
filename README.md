@@ -1,7 +1,7 @@
 @oclif/dev-cli
 ===============
 
-**This library has been replaced by [oclif](https://github.com/oclif) and is now in maintenance mode. We will only consider PRs that address security concerns.**
+**This library has been replaced by [oclif](https://github.com/oclif) and is now archived.**
 
 helpers for oclif CLIs
 
